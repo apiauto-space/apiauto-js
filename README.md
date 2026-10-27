@@ -304,7 +304,7 @@ On the demo key the quota counts data requests instead of cars. All types are ex
 | Language | Package | Repository |
 | --- | --- | --- |
 | JavaScript / TypeScript | npm [`apiauto`](https://www.npmjs.com/package/apiauto) | [apiauto-space/apiauto-js](https://github.com/apiauto-space/apiauto-js) |
-| Python | PyPI [`apiauto`](https://pypi.org/project/apiauto/) | [apiauto-space/apiauto-python](https://github.com/apiauto-space/apiauto-python) |
+| Python | PyPI [`apiauto-space`](https://pypi.org/project/apiauto-space/) | [apiauto-space/apiauto-python](https://github.com/apiauto-space/apiauto-python) |
 | HTTP examples | — | [apiauto-space/encar-api-examples](https://github.com/apiauto-space/encar-api-examples) |
 
 ## По-русски
