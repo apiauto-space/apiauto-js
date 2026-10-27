@@ -1,0 +1,68 @@
+{
+  "name": "apiauto",
+  "version": "0.1.0",
+  "description": "JavaScript/TypeScript client for the apiauto.space used-car API: Encar (Korea), Che168 (China), Copart and IAAI (USA) listings in one JSON format",
+  "keywords": [
+    "encar",
+    "encar-api",
+    "che168",
+    "che168-api",
+    "copart",
+    "copart-api",
+    "iaai",
+    "korean-cars",
+    "chinese-cars",
+    "used-cars",
+    "car-auction",
+    "car-listings",
+    "vehicle-data",
+    "api-client",
+    "typescript",
+    "sdk"
+  ],
+  "homepage": "https://apiauto.space/en/docs/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiauto-space/apiauto-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apiauto-space/apiauto-js/issues"
+  },
+  "license": "MIT",
+  "author": "apiauto.space (https://apiauto.space/en/)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/client.test.mjs test/live.test.mjs",
+    "version": "node scripts/sync-version.mjs && git add src/version.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^7.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
