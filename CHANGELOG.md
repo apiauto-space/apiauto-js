@@ -4,6 +4,13 @@ All notable changes to this package are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] — 2026-11-03
+
+### Changed
+
+- The texts now say that this is the official client from the apiauto.space team. It stays
+  independent of Encar, Che168/Autohome, Copart and IAAI. The code did not change.
+
 ## [0.1.0] — 2026-10-27
 
 ### Added
@@ -18,4 +25,5 @@ All notable changes to this package are documented here. The format follows
 - Retries of 429, 500, 502, 503 and network errors with `Retry-After` and exponential backoff.
 - `lastResponse` with the quota, rate and data-age headers.
 
+[0.1.1]: https://www.npmjs.com/package/apiauto/v/0.1.1
 [0.1.0]: https://github.com/apiauto-space/apiauto-js/releases/tag/v0.1.0

@@ -1,6 +1,6 @@
 {
   "name": "apiauto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JavaScript/TypeScript client for the apiauto.space used-car API: Encar (Korea), Che168 (China), Copart and IAAI (USA) listings in one JSON format",
   "keywords": [
     "encar",

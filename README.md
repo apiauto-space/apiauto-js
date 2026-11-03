@@ -1,6 +1,6 @@
 # apiauto — JavaScript & TypeScript client for the Encar, Che168, Copart and IAAI API
 
-`apiauto` is the official JavaScript/TypeScript client of [apiauto.space](https://apiauto.space/en/docs/), a REST API with the used-car catalogs of South Korea (Encar), China (Che168) and US auctions (Copart and IAAI) in one JSON record format. apiauto.space is an independent, unofficial data service: it is not affiliated with Encar, Che168/Autohome, Copart or IAAI.
+`apiauto` is the official JavaScript/TypeScript client from the apiauto.space team. [apiauto.space](https://apiauto.space/en/docs/) is a REST API with the used-car catalogs of South Korea (Encar), China (Che168) and US auctions (Copart and IAAI) in one JSON record format. apiauto.space is an independent data service: it is not affiliated with Encar, Che168/Autohome, Copart or IAAI.
 
 [![npm version](https://img.shields.io/npm/v/apiauto)](https://www.npmjs.com/package/apiauto)
 [![license](https://img.shields.io/npm/l/apiauto)](https://github.com/apiauto-space/apiauto-js/blob/main/LICENSE)
