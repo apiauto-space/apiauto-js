@@ -309,6 +309,18 @@ On the demo key the quota counts data requests instead of cars. All types are ex
 | Go | `go get github.com/apiauto-space/apiauto-go` | [apiauto-space/apiauto-go](https://github.com/apiauto-space/apiauto-go) |
 | HTTP examples | — | [Encar](https://github.com/apiauto-space/encar-api-examples), [Che168](https://github.com/apiauto-space/che168-api-examples), [Copart](https://github.com/apiauto-space/copart-api-examples), [IAAI](https://github.com/apiauto-space/iaai-api-examples) |
 
+## Clients for one source
+
+Thin layers over this client, one per source: the market is preset, a listing number works as an id
+and the source's own fields are typed. Copart and IAAI share the `us` market and are filtered on the client.
+
+| Source | PyPI | npm | Repository |
+| --- | --- | --- | --- |
+| Encar (Korea) | [`encar-api-client`](https://pypi.org/project/encar-api-client/) | [`encar-api-client`](https://www.npmjs.com/package/encar-api-client) | [apiauto-space/encar-api](https://github.com/apiauto-space/encar-api) |
+| Che168 (China) | [`che168-api`](https://pypi.org/project/che168-api/) | [`che168-api`](https://www.npmjs.com/package/che168-api) | [apiauto-space/che168-api](https://github.com/apiauto-space/che168-api) |
+| Copart (USA) | [`copart-api`](https://pypi.org/project/copart-api/) | [`copart-api`](https://www.npmjs.com/package/copart-api) | [apiauto-space/copart-api](https://github.com/apiauto-space/copart-api) |
+| IAAI (USA) | [`iaai-api`](https://pypi.org/project/iaai-api/) | [`iaai-api`](https://www.npmjs.com/package/iaai-api) | [apiauto-space/iaai-api](https://github.com/apiauto-space/iaai-api) |
+
 ## По-русски
 
 `apiauto` — клиент на JavaScript и TypeScript для API [apiauto.space](https://apiauto.space/docs/): автомобили с Encar (Корея), Che168 (Китай), Copart и IAAI (США) в одном формате JSON. Тестовый ключ на сутки выдаёт Telegram-бот [@apiautospace_bot](https://t.me/apiautospace_bot?start=demo). Ключ кладите в переменную окружения `APIAUTO_KEY` и вызывайте API только со своего сервера: запросы из браузера закрыты (CORS выключен). Страницы перебираются курсором через `for await`, ошибки приходят классами вроде `QuotaExceededError`, а остаток квоты виден в `api.lastResponse`.
